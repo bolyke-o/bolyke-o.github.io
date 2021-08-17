@@ -300,8 +300,10 @@ a.btn-default {
 .nav-pills {
     margin-bottom: 60px;
 }
-.nav-pills .nav-link {
+.nav-pills .nav-item {
     margin-right: 24px;
+}
+.nav-pills .nav-link {
     padding: 8px 16px;
     background-color: #ECEFF5;
     border-radius: 56px;
@@ -801,6 +803,9 @@ a.btn-default {
     font-size: 30px;
     line-height: 38px;
     color: #1D253E;
+}
+.indicators-title .btn {
+    width: auto;
 }
 .indicators-subtitle {
     margin-bottom: 40px;
@@ -1328,15 +1333,17 @@ a.btn-default {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
+    .nav-pills .nav-item {
+        margin-right: 8px;
+    }
     .nav-pills .nav-link {
         white-space: nowrap;
-        margin-right: 8px;
     }
     .nav-pills .nav-item:first-child {
         margin-left: 24px;
     }
     .nav-pills .nav-item:last-child {
-        margin-right: 16px;
+        margin-right: 24px;
     }
     .free {
         padding: 24px 0;
@@ -1350,7 +1357,7 @@ a.btn-default {
         margin-bottom: 12px;
     }
     .free .col-md-6 {
-        padding: 12px 16px;
+        padding: 12px;
     }
     .free-item {
         margin-bottom: 0;
