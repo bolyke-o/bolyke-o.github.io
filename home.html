@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <div class="menu-heading">Меню</div>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Бесплатный материал</a></li>
+                                <li><a href="#">Индикаторы</a></li>
+                                <li><a href="#">Наши курсы</a></li>
+                                <li><a href="#">Инвестиционные портфели</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg" alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg" alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg" alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                  </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg" alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg" alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg" alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="container">
+            <div class="main-left">
+                <div class="main-subtitle">
+                    Платформа подготовки
+                </div>
+                <h1 class="main-title">
+                    Профессиональных трейдеров
+                </h1>
+                <div class="main-btn">
+                    <a href="#subs" class="btn-default">Выбрать курс</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main-right"></div>
+    </div>
+
+    <div class="benefits">
+        <div class="container">
+            <div class="title-3 text-center">Наши преимущества</div>
+            <div class="benefits-content">
+                <div class="benefits-item">
+                    <img src="./images/benefits-1.png" alt="">
+                    <div class="benefits-title">
+                        Инновационная платформа
+                    </div>
+                    <div class="benefits-text">
+                        Самый эффективные подходы к трейдингу, что гарантирует успех каждого
+                    </div>
+                </div>
+                <div class="benefits-item">
+                    <img src="./images/benefits-2.png" alt="">
+                    <div class="benefits-title">
+                        Индивидульные индикаторы
+                    </div>
+                    <div class="benefits-text">
+                        Индикаторы основанные на ваших пожеланиях, тайм - фрейме и инстументе
+                    </div>
+                </div>
+                <div class="benefits-item">
+                    <img src="./images/benefits-3.png" alt="">
+                    <div class="benefits-title">
+                        Авторская методика
+                    </div>
+                    <div class="benefits-text">
+                        Уникальные авторские методики портфелей, зарекомендовавшие себя более чем 10 странах мира
+                    </div>
+                </div>
+                <div class="benefits-item">
+                    <img src="./images/benefits-4.png" alt="">
+                    <div class="benefits-title">
+                        Инвестиционные портфели
+                    </div>
+                    <div class="benefits-text">
+                        Построение инвестиционного порфеля для фондового рынка
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="article-tabs">
+        <div class="container">
+            <div class="title-2">Полезные статьи</div>
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab"
+                        aria-controls="pills-all" aria-selected="true">Все обзоры</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-crypto" type="button" role="tab"
+                        aria-controls="pills-crypto" aria-selected="false">Крипто</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-crisis" type="button" role="tab"
+                        aria-controls="pills-crisis" aria-selected="false">Кризис</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-oil" type="button" role="tab"
+                        aria-controls="pills-oil" aria-selected="false">Нефть</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-gas" type="button" role="tab"
+                        aria-controls="pills-gas" aria-selected="false">Газ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-clo" type="button" role="tab"
+                        aria-controls="pills-clo" aria-selected="false">CLO</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-btn text-center">
+                        <a href="#" class="btn-primary">Смотреть больше</a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-crypto" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-crisis" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-oil" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-gas" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-clo" role="tabpanel">
+                    <div class="row">
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                        <div class="tab-item col-lg-4">
+                            <div class="tab-pre">
+                                <span>Крипто</span>
+                                <span>6 часов</span>
+                            </div>
+                            <div class="tab-title title-4"><a href="">Почему запреты в Китае – плюс для криптовалют</a></div>
+                            <div class="tab-text">
+                                Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь
+                                объявили Bitcoin нежелательной инвестицией
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="free">
+        <div class="container">
+            <div class="title-2 text-center">Бесплатный материал</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="free-item">
+                        <div class="item-img">
+                            <img src="./images/free-item.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">
+                                Вся правда о трейдинге 
+                            </div>
+                            <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="free-item">
+                        <div class="item-img">
+                            <img src="./images/free-item.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">
+                                Вся правда о трейдинге 
+                            </div>
+                            <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="free-item">
+                        <div class="item-img">
+                            <img src="./images/free-item.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">
+                                Вся правда о трейдинге 
+                            </div>
+                            <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="free-item">
+                        <div class="item-img">
+                            <img src="./images/free-item.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">
+                                Вся правда о трейдинге 
+                            </div>
+                            <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="free-item">
+                        <div class="item-img">
+                            <img src="./images/free-item.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">
+                                Вся правда о трейдинге 
+                            </div>
+                            <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary">Смотреть больше</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="indicators">
+        <div class="container">
+            <div class="indicators-title">
+                <span>Разработка индивидульного индикатора</span>
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                индикатора">
+                    <span class="pv pv-info"></span>
+                </button>
+            </div>
+            <div class="indicators-subtitle">
+                Для написания алгоритмов мы использовали статистические и эконометрческие методы: регрессионный анализ, корреляционный анализ, свойства закона нормального распределения, аппроксимацию и экстраполяцию.
+            </div>
+            <div class="indicators-list">
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">Ranger</a>
+                        <div class="item-text">Осциллятор (1 месяц)</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">KenJi</a>
+                        <div class="item-text">Анализ средних</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">ARDI</a>
+                        <div class="item-text">(Auto Regression
+                            Divergence Indicator)</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">DX24</a>
+                        <div class="item-text">Скальперский гибрид</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">Market Sentiment indicator</a>
+                        <div class="item-text">Тренд \ осцилятор</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+                <div class="indicators-item">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="item-title">Synthetic Levels</a>
+                        <div class="item-text">Графический паттерн</div>
+                    </div>
+                    <div class="indicators-arrow"><a href="#"><span class="pv pv-arrow"></span></a></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary">Другие индикаторы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="./images/alex.jpg" alt="">
+            </div>
+            <div class="title-3">Алекс Пластун</div>
+            <div class="about-text">
+                <p>
+                    Фаундер и CEO в Profit View, идейный вдохновитель, автор уникальной методики обучения и концепции Profit View, профессор, доктор экономических наук
+                </p>
+                <p>
+                    В рамках первого направления накоплен более чем 15-летний опыт работы на реальных счетах (первый реальный счет был открыт еще в 2004 году), а также с десяток лет сотрудничества в качестве аналитика с разными компаниями.
+                    <a href="#">Читать больше <span class="pv pv-chevron-down"></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="subs" class="subs">
+        <div class="container">
+            <div class="title-2 text-center">Подписка на курсы Profit - view</div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="subs-item">
+                        <div class="subs-amount">100$ <span>в мес</span></div>
+                        <div class="subs-img">
+                            <img src="./images/subs-1.png" alt="">
+                        </div>
+                        <div class="subs-title">SilverFX</div>
+                        <div class="subs-list">
+                            <ul>
+                                <li class="included">Тех. поддержка</li>
+                                <li class="included">Просмотр уроков в любое время</li>
+                                <li class="included">Практические домашние задания</li>
+                                <li class="excluded">Обратная связь по каждому ДЗ</li>
+                                <li class="excluded">Возможность задавать вопросы
+                                    преподавателю</li>
+                                <li class="excluded">Видеосвязь с преподавателем</li>
+                                <li class="excluded">Моментальная обратная связь</li>
+                                <li class="excluded">3 созвона после обучения</li>
+                            </ul>
+                        </div>
+                        <div class="subs-btn">
+                            <a href="#" class="btn-primary">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-4">
+                    <div class="subs-item">
+                        <div class="subs-amount">150$ <span>в мес</span></div>
+                        <div class="subs-img">
+                            <img src="./images/subs-2.png" alt="">
+                        </div>
+                        <div class="subs-title">PlusFX</div>
+                        <div class="subs-list">
+                            <ul>
+                                <li class="included">Тех. поддержка</li>
+                                <li class="included">Просмотр уроков в любое время</li>
+                                <li class="included">Практические домашние задания</li>
+                                <li class="included">Обратная связь по каждому ДЗ</li>
+                                <li class="excluded">Возможность задавать вопросы
+                                    преподавателю</li>
+                                <li class="excluded">Видеосвязь с преподавателем</li>
+                                <li class="excluded">Моментальная обратная связь</li>
+                                <li class="excluded">3 созвона после обучения</li>
+                            </ul>
+                        </div>
+                        <div class="subs-btn">
+                            <a href="#" class="btn-primary">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="subs-item">
+                        <div class="subs-amount">200$ <span>в мес</span></div>
+                        <div class="subs-img">
+                            <img src="./images/subs-3.png" alt="">
+                        </div>
+                        <div class="subs-title">PremiumFX</div>
+                        <div class="subs-list">
+                            <ul>
+                                <li class="included">Тех. поддержка</li>
+                                <li class="included">Просмотр уроков в любое время</li>
+                                <li class="included">Практические домашние задания</li>
+                                <li class="included">Обратная связь по каждому ДЗ</li>
+                                <li class="included">Возможность задавать вопросы
+                                    преподавателю</li>
+                                <li class="included">Видеосвязь с преподавателем</li>
+                                <li class="included">Моментальная обратная связь</li>
+                                <li class="included">3 созвона после обучения</li>
+                            </ul>
+                        </div>
+                        <div class="subs-btn">
+                            <a href="#" class="btn-primary">Оформить подписку</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="sources">
+        <div class="container">
+            <div class="title-2">Инвестиционные портфели для фондового рынка</div>
+            <div class="sources-text">
+                <p>
+                    Наша задача - помочь выбрать перспективные позиции, исходя из нашего опыта и видения рынков с учетом конкретных расчетов под индивидуальные потребности клиента. Мы сделаем все что в наших cилах, чтобы обеспечить нужный уровень диверсификации, риска, сбалансированности и доходности портфеля.
+                </p>
+                <p>
+                    Для этого в нашем распоряжении как классические портфельные теории (CAPM, APM, MPT и др), так и собственные наработки.
+                </p>
+            </div>
+            <div class="swiper-container sources-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sources-item">
+                            <div class="sources-heading">
+                                <div>
+                                    <span>Q3</span>
+                                    <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                </div>
+                                <div class="sources-title">
+                                    Тип портфеля: <br>
+                                    Консервативный
+                                </div>
+                            </div>
+                            <div class="sources-body">
+                                <table>
+                                    <tr>
+                                        <th>Состав:</th>
+                                        <th>Активы:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Фондовый рынок - 70%</td>
+                                        <td>$ 25 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Товарный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Валютный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sources-item">
+                            <div class="sources-heading">
+                                <div>
+                                    <span>Q3</span>
+                                    <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                </div>
+                                <div class="sources-title">
+                                    Тип портфеля: <br>
+                                    Консервативный
+                                </div>
+                            </div>
+                            <div class="sources-body">
+                                <table>
+                                    <tr>
+                                        <th>Состав:</th>
+                                        <th>Активы:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Фондовый рынок - 70%</td>
+                                        <td>$ 25 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Товарный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Валютный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sources-item">
+                            <div class="sources-heading">
+                                <div>
+                                    <span>Q3</span>
+                                    <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                </div>
+                                <div class="sources-title">
+                                    Тип портфеля: <br>
+                                    Консервативный
+                                </div>
+                            </div>
+                            <div class="sources-body">
+                                <table>
+                                    <tr>
+                                        <th>Состав:</th>
+                                        <th>Активы:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Фондовый рынок - 70%</td>
+                                        <td>$ 25 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Товарный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Валютный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sources-item">
+                            <div class="sources-heading">
+                                <div>
+                                    <span>Q3</span>
+                                    <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                </div>
+                                <div class="sources-title">
+                                    Тип портфеля: <br>
+                                    Консервативный
+                                </div>
+                            </div>
+                            <div class="sources-body">
+                                <table>
+                                    <tr>
+                                        <th>Состав:</th>
+                                        <th>Активы:</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Фондовый рынок - 70%</td>
+                                        <td>$ 25 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Товарный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Валютный рынок - 15%</td>
+                                        <td>$ 5 000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary btn-lg">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <div class="container">
+            <div id="feedbackForm">
+                <div class="feedback-form-wrap d-flex">
+                    <div class="feedback-left">
+                        <div class="feedback-title">
+                            Поможем в выборе!
+                        </div>
+                        <div class="text-grey--light">
+                            Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.
+                        </div>
+                        
+                    </div>
+                    <div class="feedback-right">
+                        <form class="feedback-form d-flex flex-column" action="">
+                            <div class="form-top d-flex flex-wrap">
+                                <div class="input-field">
+                                    <input type="text" name="name" placeholder="Имя">
+                                </div>
+                                <div class="input-field">
+                                    <input type="tel" name="tel" placeholder="Телефон">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="email" placeholder="Электронная почта">
+                                </div>
+                            </div>
+                            <div class="form-bottom d-flex align-items-start">
+                                <div class="text-grey--lighter">
+                                    Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформы
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
