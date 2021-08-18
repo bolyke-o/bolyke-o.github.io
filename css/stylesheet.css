@@ -973,8 +973,9 @@ a.btn-default {
     line-height: 23px;
     color: #6F747A;
 }
-.subs-list li.excluded {
+.subs-list li>s, .subs-list li>strike, .subs-list s>li, .subs-list strike>li, .subs-list s, .subs-list strike {
     opacity: .3;
+    text-decoration: none;
 }
 .subs-btn .btn-primary {
     margin-top: 10px;

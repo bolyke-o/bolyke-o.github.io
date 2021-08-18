@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+      clickable: true,
     },
     breakpoints: {
       500: {
