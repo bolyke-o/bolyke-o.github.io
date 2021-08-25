@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <a href="/"><span class="pv pv-user"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="account">
+        <div class="account-nav-mob">
+            <div class="account-nav">
+                <a href="./account-history.html">
+                    <img src="./images/account/history.svg" alt="">
+                </a>
+                <a href="./account-robots.html" class="active">
+                    <img src="./images/account/robot.svg" alt="">
+                </a>
+                <a href="/">
+                    <img src="./images/account/college-graduation.svg" alt="">
+                </a>
+                <a href="/">
+                    <img src="./images/account/friends.svg" alt="">
+                </a>
+                <a href="/">
+                    <img src="./images/account/setting.svg" alt="">
+                </a>
+                <a href="/" class="nav-logout">
+                    <img src="./images/account/log-in.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="account-nav-desk offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasAccount">
+            <div class="offcanvas-header">
+                <div class="user-pic">
+                    <img src="./images/alex.jpg" alt="">
+                    <button type="button"><span class="pv pv-plus"></span></button>
+                </div>
+                <div class="user-name">Anton Kiriyan</div>
+                <div class="user-email">antontest@gmail.com</div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="account-nav">
+                    <a href="./account-history.html">
+                        <img src="./images/account/history.svg" alt="">
+                        <span>История транзакций</span>
+                    </a>
+                    <a href="./account-robots.html" class="active">
+                        <img src="./images/account/robot.svg" alt="">
+                        <span>Торговые роботы</span>
+                    </a>
+                    <a href="/">
+                        <img src="./images/account/college-graduation.svg" alt="">
+                        <span>Курсы</span>
+                    </a>
+                    <a href="/">
+                        <img src="./images/account/friends.svg" alt="">
+                        <span>Реферальная программа</span>
+                    </a>
+                    <a href="/">
+                        <img src="./images/account/setting.svg" alt="">
+                        <span>Настройки</span>
+                    </a>
+                    <a href="/" class="nav-logout">
+                        <img src="./images/account/log-in.svg" alt="">
+                        <span>Выход</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="account-content">
+            <div class="title-3 mb-4">Торговые роботы</div>
+            <div class="title-4 mb-3">Ваши роботы</div>
+            <div class="swiper-container robots-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <a href="./images/logo.svg" class="card-link" download>Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-number-pagination">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <a href="/" class="btn-link">Смотреть больше</a>
+
+            <div class="title-4 mb-3">
+                Доступно после подписки 
+                <span data-bs-toggle="modal" data-bs-target="#subModal">Выбрать подписку</span>
+            </div>
+
+            <div class="swiper-container robots-swiper robots-limited">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-title">
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Разработка индивидульного
+                                индикатора">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                                <span>Igor_Robot v.01</span>
+                            </div>
+                            <div class="card-text">
+                                использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу использует два индикатора технического анализа. Первый принадлежит к классу Первый принадлежит к классу 
+                            </div>
+                            <span class="disabled-link">Скачать <span class="pv pv-download-black"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-number-pagination">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <a href="/" class="btn-link">Смотреть больше</a>
+        </div>
+     
+    </div>
+ 
+    <div class="modal fade" id="subModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="title-3 text-center">Выбор подписки</div>
+                <div class="swiper-container subs-swiper">
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">100$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-1.png" alt="">
+                                </div>
+                                <div class="subs-title">SilverFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="excluded">Обратная связь по каждому ДЗ</li>
+                                        <li class="excluded">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="excluded">Видеосвязь с преподавателем</li>
+                                        <li class="excluded">Моментальная обратная связь</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">150$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-2.png" alt="">
+                                </div>
+                                <div class="subs-title">PlusFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="excluded">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="excluded">Видеосвязь с преподавателем</li>
+                                        <li class="excluded">Моментальная обратная связь</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">200$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-3.png" alt="">
+                                </div>
+                                <div class="subs-title">PremiumFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="included">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="included">Видеосвязь с преподавателем</li>
+                                        <li class="included">Моментальная обратная связь</li>
+                                        <li class="included">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">200$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-3.png" alt="">
+                                </div>
+                                <div class="subs-title">PremiumFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="included">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="included">Видеосвязь с преподавателем</li>
+                                        <li class="included">Моментальная обратная связь</li>
+                                        <li class="included">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
