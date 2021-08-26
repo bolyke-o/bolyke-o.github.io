@@ -338,6 +338,27 @@ a.btn-default {
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: #F8F8F8;
 }
+.offcanvas .offcanvas-body {
+    overflow: hidden;
+    transition: overflow .2s ease-in;
+}
+.offcanvas:hover .offcanvas-body {
+    overflow: auto;
+}
+.offcanvas ::-webkit-scrollbar {
+    width: 8px;
+}
+.offcanvas ::-webkit-scrollbar-track {
+    background: rgba(140, 82, 82, 0);
+    border-radius: 0;
+}
+.offcanvas ::-webkit-scrollbar-thumb {
+    background: rgba(231, 234, 242, 0.4);
+    border-radius: 4px;
+}
+.offcanvas ::-webkit-scrollbar-thumb:hover {
+    background: rgba(231, 234, 242, 0.6);
+}
 /* icons */
 .pv {
     display: block;
