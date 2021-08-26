@@ -327,7 +327,17 @@ a.btn-default {
     background: #ED6528;
     border-radius: 56px;
 }
-
+.dropdown .dropdown-item {
+    color: #111;
+}
+.dropdown-menu {
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #F8F8F8;
+}
 /* icons */
 .pv {
     display: block;
