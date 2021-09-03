@@ -102,16 +102,16 @@
                 <a href="./account-robots.html" class="active">
                     <img src="./images/account/robot.svg" alt="">
                 </a>
-                <a href="/">
+                <a href="./account-study.html">
                     <img src="./images/account/college-graduation.svg" alt="">
                 </a>
-                <a href="/">
+                <a href="./account-referal.html">
                     <img src="./images/account/friends.svg" alt="">
                 </a>
-                <a href="/">
+                <a href="./account-settings.html">
                     <img src="./images/account/setting.svg" alt="">
                 </a>
-                <a href="/" class="nav-logout">
+                <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
                     <img src="./images/account/log-in.svg" alt="">
                 </a>
             </div>
@@ -135,19 +135,19 @@
                         <img src="./images/account/robot.svg" alt="">
                         <span>Торговые роботы</span>
                     </a>
-                    <a href="/">
+                    <a href="./account-study.html">
                         <img src="./images/account/college-graduation.svg" alt="">
-                        <span>Курсы</span>
+                        <span>Обучение</span>
                     </a>
-                    <a href="/">
+                    <a href="./account-referal.html">
                         <img src="./images/account/friends.svg" alt="">
                         <span>Реферальная программа</span>
                     </a>
-                    <a href="/">
+                    <a href="./account-settings.html">
                         <img src="./images/account/setting.svg" alt="">
                         <span>Настройки</span>
                     </a>
-                    <a href="/" class="nav-logout">
+                    <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
                         <img src="./images/account/log-in.svg" alt="">
                         <span>Выход</span>
                     </a>
@@ -515,6 +515,27 @@
     
                     </div>
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <span class="pv pv-logout-modal mb-4"></span>
+                <div class="title-4 text-center mb-1">Выход из аккаунта</div>
+                <div class="text-grey text-center">Вы уверены, что хотите выйти?</div>
+                <div class="w-100 d-flex flex-column flex-md-row justify-content-center mt-4">
+                    <a href="/" class="btn-primary me-1">Выйти</a>
+                    <button class="btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
                 </div>
             </div>
            

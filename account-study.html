@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false"><span class="pv pv-user"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="account">
+        <div class="account-nav-mob">
+            <div class="account-nav">
+                <a href="./account-history.html">
+                    <img src="./images/account/history.svg" alt="">
+                </a>
+                <a href="./account-robots.html">
+                    <img src="./images/account/robot.svg" alt="">
+                </a>
+                <a href="./account-study.html" class="active">
+                    <img src="./images/account/college-graduation.svg" alt="">
+                </a>
+                <a href="./account-referal.html">
+                    <img src="./images/account/friends.svg" alt="">
+                </a>
+                <a href="./account-settings.html">
+                    <img src="./images/account/setting.svg" alt="">
+                </a>
+                <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <img src="./images/account/log-in.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="account-nav-desk offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasAccount">
+            <div class="offcanvas-body">
+                <div class="offcanvas-header">
+                    <div class="user-pic">
+                        <img src="./images/alex.jpg" alt="">
+                        <button type="button"><span class="pv pv-plus"></span></button>
+                    </div>
+                    <div class="user-name">Anton Kiriyan</div>
+                    <div class="user-email">antontest@gmail.com</div>
+                </div>
+                <div class="account-nav">
+                    <a href="./account-history.html">
+                        <img src="./images/account/history.svg" alt="">
+                        <span>История транзакций</span>
+                    </a>
+                    <a href="./account-robots.html">
+                        <img src="./images/account/robot.svg" alt="">
+                        <span>Торговые роботы</span>
+                    </a>
+                    <a href="./account-study.html" class="active">
+                        <img src="./images/account/college-graduation.svg" alt="">
+                        <span>Обучение</span>
+                    </a>
+                    <a href="./account-referal.html">
+                        <img src="./images/account/friends.svg" alt="">
+                        <span>Реферальная программа</span>
+                    </a>
+                    <a href="./account-settings.html">
+                        <img src="./images/account/setting.svg" alt="">
+                        <span>Настройки</span>
+                    </a>
+                    <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                        <img src="./images/account/log-in.svg" alt="">
+                        <span>Выход</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="account-content">
+            <div class="title-3 mb-4">Обучение</div>
+            <div class="title-4 mb-3">Тарифы на курсы</div>
+
+            <div class="swiper-container cources-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="subs-item">
+                            <div class="subs-amount">80$</div>
+                            <div class="subs-title">Основы трейдинга</div>
+                            <div class="subs-list">
+                                <p>
+                                    Подойдет для начинающих инвесторов, которым нужны базовые знания для успешной работы на бирже
+                                </p>
+                                <div>
+                                    <span>Длительность курса:</span>
+                                    <span>5 дней</span>
+                                </div>
+                                <div>
+                                    <span>Формат занятий:</span>
+                                    <span>онлайн</span>
+                                </div>
+                                <div>
+                                    <span>Количество занятий:</span>
+                                    <span>6 занятий</span>
+                                </div>
+                                <div>
+                                    <span>Дата:</span>
+                                    <span>15 - 21 сентября</span>
+                                </div>
+                            </div>
+                            <div class="subs-btn">
+                                <a href="/" class="btn-primary">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="subs-item">
+                            <div class="subs-amount">300$</div>
+                            <div class="subs-title">Апгрейд трейдера</div>
+                            <div class="subs-list">
+                                <p>
+                                    Подойдет для практикующих инвесторов, которые хотят усовершенствовать свои знания в инвестировании
+                                </p>
+                                <div>
+                                    <span>Длительность курса:</span>
+                                    <span>20 дней</span>
+                                </div>
+                                <div>
+                                    <span>Формат занятий:</span>
+                                    <span>онлайн</span>
+                                </div>
+                                <div>
+                                    <span>Количество занятий:</span>
+                                    <span>20 занятий</span>
+                                </div>
+                                <div>
+                                    <span>Дата:</span>
+                                    <span>10 - 30 сентября</span>
+                                </div>
+                            </div>
+                            <div class="subs-btn">
+                                <a href="/" class="btn-primary">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="subs-item">
+                            <div class="subs-amount">80$</div>
+                            <div class="subs-title">Основы трейдинга</div>
+                            <div class="subs-list">
+                                <p>
+                                    Подойдет для начинающих инвесторов, которым нужны базовые знания для успешной работы на бирже знания для успешной работы на бирже   
+                                </p>
+                                <div>
+                                    <span>Длительность курса:</span>
+                                    <span>5 дней</span>
+                                </div>
+                                <div>
+                                    <span>Формат занятий:</span>
+                                    <span>онлайн</span>
+                                </div>
+                                <div>
+                                    <span>Количество занятий:</span>
+                                    <span>6 занятий</span>
+                                </div>
+                                <div>
+                                    <span>Дата:</span>
+                                    <span>15 - 21 сентября</span>
+                                </div>
+                            </div>
+                            <div class="subs-btn">
+                                <a href="/" class="btn-primary">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="subs-item">
+                            <div class="subs-amount">300$</div>
+                            <div class="subs-title">Апгрейд трейдера</div>
+                            <div class="subs-list">
+                                <p>
+                                    Подойдет для практикующих инвесторов, которые хотят усовершенствовать свои знания в инвестировании
+                                </p>
+                                <div>
+                                    <span>Длительность курса:</span>
+                                    <span>20 дней</span>
+                                </div>
+                                <div>
+                                    <span>Формат занятий:</span>
+                                    <span>онлайн</span>
+                                </div>
+                                <div>
+                                    <span>Количество занятий:</span>
+                                    <span>20 занятий</span>
+                                </div>
+                                <div>
+                                    <span>Дата:</span>
+                                    <span>10 - 30 сентября</span>
+                                </div>
+                            </div>
+                            <div class="subs-btn">
+                                <a href="/" class="btn-primary">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="title-3 mb-3">Вебинары</div>
+            <div class="swiper-container webinars-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/webinars.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-title">
+                                Торги акциями на бирже. Как это работает а бирже. Как это работает работает
+                            </div>
+                            <div class="card-text">
+                                <div>
+                                    <span>Автор:</span>
+                                    <span>Алекс Пластун</span>
+                                </div>
+                                <div>
+                                    <span>Стоимость:</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/webinars.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-title">
+                                Торги акциями на бирже. Как это работает
+                            </div>
+                            <div class="card-text">
+                                <div>
+                                    <span>Автор:</span>
+                                    <span>Алекс Пластун</span>
+                                </div>
+                                <div>
+                                    <span>Стоимость:</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/webinars.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-title">
+                                Торги акциями на бирже. Как это работает
+                            </div>
+                            <div class="card-text">
+                                <div>
+                                    <span>Автор:</span>
+                                    <span>Алекс Пластун</span>
+                                </div>
+                                <div>
+                                    <span>Стоимость:</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/webinars.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-title">
+                                Торги акциями на бирже. Как это работает
+                            </div>
+                            <div class="card-text">
+                                <div>
+                                    <span>Автор:</span>
+                                    <span>Алекс Пластун</span>
+                                </div>
+                                <div>
+                                    <span>Стоимость:</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/webinars.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-title">
+                                Торги акциями на бирже. Как это работает
+                            </div>
+                            <div class="card-text">
+                                <div>
+                                    <span>Автор:</span>
+                                    <span>Алекс Пластун</span>
+                                </div>
+                                <div>
+                                    <span>Стоимость:</span>
+                                    <span>Бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="title-3 mb-3">Статьи</div>
+            <div class="swiper-container articles-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга  рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-flat">
+                            <a href="/" class="card-image">
+                                <img src="./images/article.jpg" alt="" draggable="false">
+                            </a>
+                            <div class="card-text">
+                                Теория эффективного рынка с точки зрения трейдинга
+                            </div>
+                            <a href="/" class="card-link">Читать полностью <span class="pv pv-link-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+      
+        </div>
+     
+    </div>
+ 
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <span class="pv pv-logout-modal mb-4"></span>
+                <div class="title-4 text-center mb-1">Выход из аккаунта</div>
+                <div class="text-grey text-center">Вы уверены, что хотите выйти?</div>
+                <div class="w-100 d-flex flex-column flex-md-row justify-content-center mt-4">
+                    <a href="/" class="btn-primary me-1">Выйти</a>
+                    <button class="btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

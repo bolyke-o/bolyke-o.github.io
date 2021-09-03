@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false"><span class="pv pv-user"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24, 835.64</span><span class="ticker-change"><span class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52, 726.19</span><span class="ticker-change"><span class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="account">
+        <div class="account-nav-mob">
+            <div class="account-nav">
+                <a href="./account-history.html">
+                    <img src="./images/account/history.svg" alt="">
+                </a>
+                <a href="./account-robots.html">
+                    <img src="./images/account/robot.svg" alt="">
+                </a>
+                <a href="./account-study.html">
+                    <img src="./images/account/college-graduation.svg" alt="">
+                </a>
+                <a href="./account-referal.html">
+                    <img src="./images/account/friends.svg" alt="">
+                </a>
+                <a href="./account-settings.html" class="active">
+                    <img src="./images/account/setting.svg" alt="">
+                </a>
+                <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <img src="./images/account/log-in.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="account-nav-desk offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasAccount">
+            <div class="offcanvas-body">
+                <div class="offcanvas-header">
+                    <div class="user-pic">
+                        <img src="./images/alex.jpg" alt="">
+                        <button type="button"><span class="pv pv-plus"></span></button>
+                    </div>
+                    <div class="user-name">Anton Kiriyan</div>
+                    <div class="user-email">antontest@gmail.com</div>
+                </div>
+                <div class="account-nav">
+                    <a href="./account-history.html">
+                        <img src="./images/account/history.svg" alt="">
+                        <span>История транзакций</span>
+                    </a>
+                    <a href="./account-robots.html">
+                        <img src="./images/account/robot.svg" alt="">
+                        <span>Торговые роботы</span>
+                    </a>
+                    <a href="./account-study.html">
+                        <img src="./images/account/college-graduation.svg" alt="">
+                        <span>Обучение</span>
+                    </a>
+                    <a href="./account-referal.html">
+                        <img src="./images/account/friends.svg" alt="">
+                        <span>Реферальная программа</span>
+                    </a>
+                    <a href="./account-settings.html" class="active">
+                        <img src="./images/account/setting.svg" alt="">
+                        <span>Настройки</span>
+                    </a>
+                    <a href="#" class="nav-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                        <img src="./images/account/log-in.svg" alt="">
+                        <span>Выход</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="account-content">
+            <div class="settings">
+                <div class="title-3 mb-4">Смена пароля</div>
+                <form action="" class="password-form">
+                    <div class="input-field">
+                        <input type="password" name="password-old" placeholder="Старый пароль">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password-new" placeholder="Новый пароль">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password-new-repeat" placeholder="Повторить новый пароль">
+                    </div>
+                    <button class="btn-primary btn-full btn-md">Применить</button>
+                    <div class="validate-text mb-2">
+                        <span>Ваш пароль должен содержать от 8 до 32 символов</span>
+                        <span class="pv pv-check show"></span>
+                    </div>
+                    <div class="validate-text mb-4 mb-md-5">
+                        <span>Содержать одну заглавную букву и одну цифру</span>
+                        <span class="pv pv-check show"></span>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="auth">
+                        <label class="form-check-label" for="auth">Two-factor authentification</label>
+                    </div>
+                    <div class="text-grey--lighter mt-2">
+                        Two-factor authentication is a security feature that helps protect your account in addition to password protection. With the configured two-facto authentication, you will have to enter a special security code each time you try to access the profile.
+                    </div>
+                </form>
+            </div>
+        </div>
+     
+    </div>
+ 
+    <div class="modal fade" id="subModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="title-3 text-center">Выбор подписки</div>
+                <div class="swiper-container subs-swiper">
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">100$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-1.png" alt="">
+                                </div>
+                                <div class="subs-title">SilverFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="excluded">Обратная связь по каждому ДЗ</li>
+                                        <li class="excluded">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="excluded">Видеосвязь с преподавателем</li>
+                                        <li class="excluded">Моментальная обратная связь</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">150$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-2.png" alt="">
+                                </div>
+                                <div class="subs-title">PlusFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="excluded">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="excluded">Видеосвязь с преподавателем</li>
+                                        <li class="excluded">Моментальная обратная связь</li>
+                                        <li class="excluded">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">200$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-3.png" alt="">
+                                </div>
+                                <div class="subs-title">PremiumFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="included">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="included">Видеосвязь с преподавателем</li>
+                                        <li class="included">Моментальная обратная связь</li>
+                                        <li class="included">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="subs-item">
+                                <div class="subs-amount">200$ <span>в мес</span></div>
+                                <div class="subs-img">
+                                    <img src="./images/subs-3.png" alt="">
+                                </div>
+                                <div class="subs-title">PremiumFX</div>
+                                <div class="subs-list">
+                                    <ul>
+                                        <li class="included">Тех. поддержка</li>
+                                        <li class="included">Просмотр уроков в любое время</li>
+                                        <li class="included">Практические домашние задания</li>
+                                        <li class="included">Обратная связь по каждому ДЗ</li>
+                                        <li class="included">Возможность задавать вопросы
+                                            преподавателю</li>
+                                        <li class="included">Видеосвязь с преподавателем</li>
+                                        <li class="included">Моментальная обратная связь</li>
+                                        <li class="included">3 созвона после обучения</li>
+                                    </ul>
+                                </div>
+                                <div class="subs-btn">
+                                    <a href="/" class="btn-primary">Оформить подписку</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <span class="pv pv-logout-modal mb-4"></span>
+                <div class="title-4 text-center mb-1">Выход из аккаунта</div>
+                <div class="text-grey text-center">Вы уверены, что хотите выйти?</div>
+                <div class="w-100 d-flex flex-column flex-md-row justify-content-center mt-4">
+                    <a href="/" class="btn-primary me-1">Выйти</a>
+                    <button class="btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

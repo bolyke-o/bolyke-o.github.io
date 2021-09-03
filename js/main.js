@@ -102,7 +102,60 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
     
+    // cources slider
+    let swiperCources = new Swiper(".cources-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
+      breakpoints: {
+        500: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1025: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+      },
+    });
 
+    // webinars slider 
+    let swiperWebinars = new Swiper('.webinars-swiper', {
+      spaceBetween: 24,
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+       // articles slider 
+       let swiperArticles = new Swiper('.articles-swiper', {
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
   
   /* Account sliders end */
 });
