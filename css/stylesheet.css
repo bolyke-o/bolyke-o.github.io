@@ -1865,6 +1865,7 @@ a.btn-secondary {
     border: 1px solid rgba(18, 120, 215, 0.2);
     border-radius: 14px;
     cursor: copy;
+    user-select: none;
     transition: box-shadow .3s ease-in;
 }
 .referal-link span:first-child {
