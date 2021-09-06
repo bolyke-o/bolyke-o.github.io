@@ -207,6 +207,7 @@ input:not([type=checkbox]):hover, textarea:hover, select:hover {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     box-sizing: border-box;
+    outline: none;
 }
 .btn-primary:hover {
     color: #FFFFFF;
@@ -229,6 +230,7 @@ input:not([type=checkbox]):hover, textarea:hover, select:hover {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     box-sizing: border-box;
+    outline: none;
 }
 a.btn-default {
     color: #1D253E;
@@ -254,6 +256,7 @@ a.btn-default {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     box-sizing: border-box;
+    outline: none;
 }
 a.btn-secondary {
     color: #1D253E;
@@ -296,8 +299,12 @@ a.btn-secondary {
     text-decoration: underline;
     color: #111111;
 }
-.btn-close:focus {
+.btn-check:focus+.btn-primary, .btn-primary:focus,
+.btn-close:focus, .btn-check:active+.btn-primary:focus, 
+.btn-check:checked+.btn-primary:focus, .btn-primary.active:focus,
+.btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: none;
+    outline: none !important;
 }
 .disabled-link {
     opacity: 0.4;
@@ -1686,6 +1693,18 @@ a.btn-secondary {
     opacity: 1;
     z-index: 2;
 }
+.popover.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+    border: 0;
+}
+.popover-body {
+    padding: 0 10px;
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::before, .bs-popover-top>.popover-arrow::before {
+    border: 0;
+}
 /* --- popover end --- */
 #subModal .modal-dialog {
     max-width: 1300px;
@@ -1858,9 +1877,7 @@ a.btn-secondary {
     margin-bottom: 24px;
     padding: 16px 20px;
     text-align: center;
-    font-size: 15px;
-    line-height: 23px;
-    color: #1278D7;
+
     background: rgba(18, 120, 215, 0.03);
     border: 1px solid rgba(18, 120, 215, 0.2);
     border-radius: 14px;
@@ -1868,9 +1885,21 @@ a.btn-secondary {
     user-select: none;
     transition: box-shadow .3s ease-in;
 }
-.referal-link span:first-child {
+.referal-link input {
+    margin: 0;
+    font-size: 15px;
+    line-height: 23px;
+    color: #1278D7;
+    background: transparent;
+    border: 0 !important;
+    padding: 0;
+    width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+.referal-link input::selection {
+    background: transparent;
+    color: #1278D7;
 }
 .referal-link .pv {
     width: 24px;

@@ -167,7 +167,7 @@
                     <div class="input-field">
                         <input type="password" name="password-new-repeat" placeholder="Повторить новый пароль">
                     </div>
-                    <button class="btn-primary btn-full btn-md">Применить</button>
+                    <button class="btn-primary btn-full btn-md" type="button" data-bs-toggle="modal" data-bs-target="#settingsModal">Применить</button>
                     <div class="validate-text mb-2">
                         <span>Ваш пароль должен содержать от 8 до 32 символов</span>
                         <span class="pv pv-check show"></span>
@@ -189,127 +189,15 @@
      
     </div>
  
-    <div class="modal fade" id="subModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="title-3 text-center">Выбор подписки</div>
-                <div class="swiper-container subs-swiper">
-                    <div class="swiper-wrapper">
-    
-                        <div class="swiper-slide">
-                            <div class="subs-item">
-                                <div class="subs-amount">100$ <span>в мес</span></div>
-                                <div class="subs-img">
-                                    <img src="./images/subs-1.png" alt="">
-                                </div>
-                                <div class="subs-title">SilverFX</div>
-                                <div class="subs-list">
-                                    <ul>
-                                        <li class="included">Тех. поддержка</li>
-                                        <li class="included">Просмотр уроков в любое время</li>
-                                        <li class="included">Практические домашние задания</li>
-                                        <li class="excluded">Обратная связь по каждому ДЗ</li>
-                                        <li class="excluded">Возможность задавать вопросы
-                                            преподавателю</li>
-                                        <li class="excluded">Видеосвязь с преподавателем</li>
-                                        <li class="excluded">Моментальная обратная связь</li>
-                                        <li class="excluded">3 созвона после обучения</li>
-                                        <li class="excluded">3 созвона после обучения</li>
-                                    </ul>
-                                </div>
-                                <div class="subs-btn">
-                                    <a href="/" class="btn-primary">Оформить подписку</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="subs-item">
-                                <div class="subs-amount">150$ <span>в мес</span></div>
-                                <div class="subs-img">
-                                    <img src="./images/subs-2.png" alt="">
-                                </div>
-                                <div class="subs-title">PlusFX</div>
-                                <div class="subs-list">
-                                    <ul>
-                                        <li class="included">Тех. поддержка</li>
-                                        <li class="included">Просмотр уроков в любое время</li>
-                                        <li class="included">Практические домашние задания</li>
-                                        <li class="included">Обратная связь по каждому ДЗ</li>
-                                        <li class="excluded">Возможность задавать вопросы
-                                            преподавателю</li>
-                                        <li class="excluded">Видеосвязь с преподавателем</li>
-                                        <li class="excluded">Моментальная обратная связь</li>
-                                        <li class="excluded">3 созвона после обучения</li>
-                                    </ul>
-                                </div>
-                                <div class="subs-btn">
-                                    <a href="/" class="btn-primary">Оформить подписку</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="subs-item">
-                                <div class="subs-amount">200$ <span>в мес</span></div>
-                                <div class="subs-img">
-                                    <img src="./images/subs-3.png" alt="">
-                                </div>
-                                <div class="subs-title">PremiumFX</div>
-                                <div class="subs-list">
-                                    <ul>
-                                        <li class="included">Тех. поддержка</li>
-                                        <li class="included">Просмотр уроков в любое время</li>
-                                        <li class="included">Практические домашние задания</li>
-                                        <li class="included">Обратная связь по каждому ДЗ</li>
-                                        <li class="included">Возможность задавать вопросы
-                                            преподавателю</li>
-                                        <li class="included">Видеосвязь с преподавателем</li>
-                                        <li class="included">Моментальная обратная связь</li>
-                                        <li class="included">3 созвона после обучения</li>
-                                    </ul>
-                                </div>
-                                <div class="subs-btn">
-                                    <a href="/" class="btn-primary">Оформить подписку</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="subs-item">
-                                <div class="subs-amount">200$ <span>в мес</span></div>
-                                <div class="subs-img">
-                                    <img src="./images/subs-3.png" alt="">
-                                </div>
-                                <div class="subs-title">PremiumFX</div>
-                                <div class="subs-list">
-                                    <ul>
-                                        <li class="included">Тех. поддержка</li>
-                                        <li class="included">Просмотр уроков в любое время</li>
-                                        <li class="included">Практические домашние задания</li>
-                                        <li class="included">Обратная связь по каждому ДЗ</li>
-                                        <li class="included">Возможность задавать вопросы
-                                            преподавателю</li>
-                                        <li class="included">Видеосвязь с преподавателем</li>
-                                        <li class="included">Моментальная обратная связь</li>
-                                        <li class="included">3 созвона после обучения</li>
-                                    </ul>
-                                </div>
-                                <div class="subs-btn">
-                                    <a href="/" class="btn-primary">Оформить подписку</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-           
+                <div class="title-3 text-center">Настройки</div>
+
           </div>
         </div>
     </div>

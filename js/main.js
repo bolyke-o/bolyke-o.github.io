@@ -3,7 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.menu-toggle').addEventListener('click', function () {
     document.querySelector('.header-nav').classList.toggle('active');
     document.querySelector('body').classList.toggle('unscroll');
-    resetMobMenu();
+  })
+
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
   })
 
   /* Home sliders */
@@ -158,5 +162,14 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   
   /* Account sliders end */
+
+  // copy referal link 
+  if (document.querySelector('.referal-link')) {
+    document.querySelector('.referal-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var text = document.querySelector('.referal-link input').select();
+      document.execCommand('copy');
+    });
+  }
 });
 
