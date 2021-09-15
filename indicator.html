@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Indicator start -->
+    <div class="indicator-page">
+        <div class="page-heading">
+            <div class="container">
+                <div class="page-heading-content">
+                    <h1>Индикаторы для технического анализа рынка</h1>
+                    <div class="subtitle">
+                        На их основе составлена не одна тысяча торговых стратегий, некоторые из них позволили добиться
+                        авторам немалых успехов в трейдинге.
+                    </div>
+                </div>
+
+                <div class="thumbnail">
+                    <picture>
+                        <source 
+                           media="(min-width: 650px)"
+                           srcset="./images/indicator-bg.jpg">
+                        <img src="./images/indicator-bg-mob.jpg" alt="" draggable="false">
+                     </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-choice">
+            <div class="container">
+                <h2 class="text-center">Выбор экспертов</h2>
+                <div class="swiper-container expert-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="expert-card">
+                                <div class="card-img">
+                                    <img src="./images/expert-slider.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <a href="/">Ranger</a>
+                                        <span>$50</span>
+                                    </div>
+                                    <div class="card-category">
+                                        <span>Осциллятор</span>
+                                        <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Осциллятор">
+                                            <span class="pv pv-info"></span>
+                                        </button>
+                                    </div>
+                                    <div class="card-text">
+                                        Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью
+                                        Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью
+                                    </div>
+                                    <a href="/" class="card-link">Learn more <span class="pv pv-link-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="expert-card">
+                                <div class="card-img">
+                                    <img src="./images/expert-slider.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <a href="/">Ranger</a>
+                                        <span>$50</span>
+                                    </div>
+                                    <div class="card-category">
+                                        <span>Осциллятор</span>
+                                        <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Осциллятор">
+                                            <span class="pv pv-info"></span>
+                                        </button>
+                                    </div>
+                                    <div class="card-text">
+                                        Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью
+                                    </div>
+                                    <a href="/" class="card-link">Learn more <span class="pv pv-link-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="expert-card">
+                                <div class="card-img">
+                                    <img src="./images/expert-slider.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <a href="/">Ranger</a>
+                                        <span>$50</span>
+                                    </div>
+                                    <div class="card-category">
+                                        <span>Осциллятор</span>
+                                        <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Осциллятор">
+                                            <span class="pv pv-info"></span>
+                                        </button>
+                                    </div>
+                                    <div class="card-text">
+                                        Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью
+                                    </div>
+                                    <a href="/" class="card-link">Learn more <span class="pv pv-link-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="indicators-all">
+        <div class="container">
+            <h2 class="text-center">Все индикаторы</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">RangerRanger Ranger Ranger Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью
+                                торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/inficator-card.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <a href="/">Ranger</a>
+                            <span>$50</span>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-category">
+                                <span>Осциллятор</span>
+                                <button type="button" class="btn btn-info" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Осциллятор">
+                                    <span class="pv pv-info"></span>
+                                </button>
+                            </div>
+                            <p>Предназначен для диапазонной торговли внутри дня с заранее определенной вероятностью</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="/" class="btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="/" class="d-block d-sm-none btn-link text-center">Смотреть больше</a>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="container">
+            <h2 class="text-center">Testimonials</h2>
+        </div>
+        <div class="swiper-container testimonials-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="card-heading">
+                            <div>
+                                <div class="author-name">Frederick Johnson</div>
+                                <div class="author-company">GOOGLE INC.</div>
+                            </div>
+                            <div class="review-rating">
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-half"></span>
+                                <span class="pv pv-star"></span>
+                                <span class="pv pv-star"></span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            Rhoncus sed est, vitae ullamcorper vitae at ut sem. Sem tortor pellentesque tempus feugiat
+                            eu elementum habitasse. Risus viverra et nulla velit tempus cras. Vulputate nunc et, a
+                            risus. Sagittis massa in augue habitant non. Gravida neque lectus sem proin magna viverra.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="card-heading">
+                            <div>
+                                <div class="author-name">Thomas Kjelberg</div>
+                                <div class="author-company">Microsoft Corp.</div>
+                            </div>
+                            <div class="review-rating">
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-half"></span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            Sed lorem id mauris vel. Eu risus diam magna turpis nisl, nunc sed volutpat vel. Congue
+                            Praesent cras sapien lectus cras donec pharetra tellus amet. Ac enim ipsum aliquam lorem.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="card-heading">
+                            <div>
+                                <div class="author-name">Frederick Johnson</div>
+                                <div class="author-company">GOOGLE INC.</div>
+                            </div>
+                            <div class="review-rating">
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-half"></span>
+                                <span class="pv pv-star"></span>
+                                <span class="pv pv-star"></span>
+                                <span class="pv pv-star"></span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            Rhoncus sed est, vitae ullamcorper vitae at ut sem. Sem tortor pellentesque tempus feugiat
+                            eu elementum habitasse. Risus viverra et nulla velit tempus cras. Vulputate nunc et, a
+                            risus. Sagittis massa in augue habitant non. Gravida neque lectus sem proin magna viverra.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="card-heading">
+                            <div>
+                                <div class="author-name">Jessie Nickelson</div>
+                                <div class="author-company">Apple Inc.</div>
+                            </div>
+                            <div class="review-rating">
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star-fill"></span>
+                                <span class="pv pv-star"></span>
+                                <span class="pv pv-star"></span>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            Orci purus, aliquet fames odio non nisi. Odio leo auctor pellentesque malesuada turpis cras
+                            euismod. Et tellus non nec semper. Interdum egestas ut dapibus lorem. Amet, in lorem quis ut
+                            quis id.
+                            Sit suspendisse vulputate dignissim nulla sed eget. Turpis neque.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="indicator-individual">
+        <div class="container">
+            <h2>Разработки индивидуальных индикаторов</h2>
+            <div class="row">
+                <div class="d-none d-sm-flex col-sm-4 col-lg-5 d-flex align-items-center">
+                    <a href="#feedbackForm" class="indicator-order">
+                        Заказать индикатор
+                    </a>
+                </div>
+                <div class="col-sm-8 col-lg-7">
+                    <ul class="indicator-list">
+                        <li>
+                            <b>Уникальные авторские алгоритмы</b>
+                            <p>Аналитическое преимущество относительно прочих трейдеров, которые пользуются стандартными
+                                и доступными всем индикаторами.</p>
+                        </li>
+                        <li>
+                            <b>Учет индивидуальных пожеланий клиента</b>
+                            <p>Разработка на основе индивидуальных особенностей, что позволит адаптировать его под
+                                психотип трейдера, уровень его агрессии, риск- и манименеджмент.</p>
+                        </li>
+                        <li>
+                            <b>Настройка под конкретный инструмент и тайм-фрейм</b>
+                            <p>Подберем оптимальные параметры с учетом рекомендуемого уровня агрессии, рисков,
+                                особенностей конкретного актива. Специфика поведения цен на разных тайм-фреймах может
+                                значительно отличаться. Наши специалисты помогут оптимизировать индикаторов и его
+                                параметры под конкретный.</p>
+                        </li>
+                        <li>
+                            <b>Доработка существующего алгоритма, расширение функционала</b>
+                            <p>Улучшение/доработка уже существующих индикаторов (алгоритмов) путем расширения их
+                                функциональных возможностей, улучшения визуализации, а также внесение прочих изменений
+                                по желанию клиента.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#feedbackForm" class="d-block d-sm-none btn-primary">Заказать индикатор</a>
+        </div>
+    </div>
+    <!-- Indicator end -->
+
+
+    <div class="feedback">
+        <div class="container">
+            <div id="feedbackForm">
+                <div class="feedback-form-wrap d-flex">
+                    <div class="feedback-left">
+                        <div class="feedback-title">
+                            Поможем в выборе!
+                        </div>
+                        <div class="text-grey--light">
+                            Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы
+                            позвоним, чтобы ответить на все ваши вопросы.
+                        </div>
+
+                    </div>
+                    <div class="feedback-right">
+                        <form class="feedback-form d-flex flex-column" action="">
+                            <div class="form-top d-flex flex-wrap">
+                                <div class="input-field">
+                                    <input type="text" name="name" placeholder="Имя">
+                                </div>
+                                <div class="input-field">
+                                    <input type="tel" name="tel" placeholder="Телефон">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="email" placeholder="Электронная почта">
+                                </div>
+                            </div>
+                            <div class="form-bottom d-flex align-items-start">
+                                <div class="text-grey--lighter">
+                                    Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами
+                                    пользования Платформы
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
