@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Article start -->
+    <div class="article-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="page-heading">
+                        <div class="page-heading-content">
+                            <h1>Базовые правила управления капиталом</h1>
+                            <div class="heading-share d-flex align-items-center">
+                                <span>Поделиться:</span>
+                                <a href="" class="ms-3"><span class="pv pv-twitter-grey"></span></a>
+                                <a href="" class="ms-3"><span class="pv pv-instagram-grey"></span></a>
+                                <a href="" class="ms-3"><span class="pv pv-facebook-grey"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <img src="./images/article-2.jpg" alt="" draggable="false">
+                        <p>
+                            Базовые правила управления капиталом появились не на пустом месте. По сути это систематизация опыта побед и поражений сотен тысяч трейдеров за многие десятилетия. Соблюдая их, появляется возможность не наступать на те грабли, на которые уже наступали миллионы раз. А это способ не только увеличить шансы на выживание в трейдинге, но и обеспечить себе долгосрочный успех.
+                        </p>
+                        <h3>Наиболее важные правила:</h3>
+
+                        <h4>1. Ограничение риска по открытым позициям</h4>
+                        <p>
+                            Суммарная величина открытых позиций не должна превышать 10% от депозита, при этом общий риск по всем открытым позициям должен быть не более 5% от депозита. То есть, например, если вы откроете 5 позиций величиной по 2% от депозита, то риск по каждой из этих позиций должен составлять не более 1% от депозита.
+                        </p>
+                        <p>
+                            Впрочем, самая основная идея управления рисками очень проста: нельзя рисковать крупными суммами. Каждый раз за одну сделку нужно рисковать лишь малой частью ваших денег. Профессионалы на рынке советуют не рисковать средствами, которые составляют более чем 1% от вашего капитала.
+                        </p>
+
+                        <h4>2. Правила 2% и 6%</h4>
+                        <p>
+                            Потерять средства в процессе трейдинга можно разными способами. Например, совершив одну неудачную сделку с очень большим объёмом. Или совершив череду неудачных сделок с объёмами поменьше. 
+                        </p>
+                        <p>
+                            <b>
+                                Ограничьте максимальный убыток от сделки 2%-ми торгового счета.
+                            </b>
+                        </p>
+                        <p>
+                            Представим, что Ваш счет составляет 50 000 USD. Вы хотите купить акции компании Х по цене в 20 USD. Цель (по прибыли) на уровне 26 USD. за акцию, а стоп-приказ на уровне 18. Сколько акций Вы можете купить? 2% от 50 000 это 1 000 USD. – максимальный риск, который Вы можете принять от одной сделки. Разделим максимальный риск всего счета на максимальный риск, принимаемый от одной акции, чтобы найти необходимый размер позиции (т.е. сколько акций Вы можете купить в этой сделке исходя из максимального уровня риска). Разделим 1 000 на 2 и получим 500 акций – таков должен быть размер Вашей позиции в теории. Но на практике нужно учитывать еще и проскальзывание при закрытии позиции, а также комиссии брокеру. Поэтому, чтобы уложиться в 2%- USD по счету, размер позиции должен быть меньше 500 акций, например 400. 
+                        </p>
+                        <p>
+                            <b>
+                                Правило 6%
+                            </b>
+                        </p>
+                        <p>
+                            Если размер Вашего счета проседает на 6% от уровня начала месяца, прекратите торговать до конца этого месяца.
+                        </p>
+                        <p>
+                            Рассчитывайте размер Вашего капитала, включая денежные средства и текущую рыночную стоимость всех открытых позиций. Прекратите торговать и закройте все позиции, если счет опустится ниже 6% от уровня последнего дня предыдущего месяца. Но продолжайте следить за рынком, интересующими бумагами и индикаторами. Если хотите, поторгуйте на демо-счете. Проанализируйте Вашу торговую систему. Была ли эта череда убытков всего лишь случайностью или это прореха в Вашей системе?
+                        </p>
+                        <p>
+                            У частных трейдеров нет персональных менеджеров. Вот почему Вам так нужна собственная система торговой дисциплины. «Правило 2%» спасет Вас от катастрофических ошибок, а «правило 6%» защитит от серии убытков. «Правило 6%» заставит Вас сделать то, что большинство не может сделать самостоятельно – прекратить терять деньги в полосе убытков.
+                        </p>
+
+                        <h4>3. При совершении сделок на рынке не увеличивайте объем более чем в 10 раз</h4>
+                        <p>
+                            Многие начинающие трейдеры считают, что начинать нужно с небольших сумм на счете. Позиция их проста: «Я не хочу рисковать большими суммами». 
+                        </p>
+                        <p>
+                            И они абсолютно правы! РИСКОВАТЬ нужно небольшими суммами, особенно в самом начале своей торговой деятельности, но именно это означает обязательное наличие на счете более значительных сумм. Принцип прост – на начальных этапах трейдер должен стремиться к использованию минимальной части суммы на счете в торговле. 
+                        </p>
+                        <p>
+                            Если на вашем счете имеется 1000 долларов, то рекомендуются сделки объемом 10000. Таким образом, вы используете 10-ти кратное увеличение вместо максимально доступного 100 кратного. Важно понимать, что чем крупнее сделки вы планируете совершать, тем больше сумма счета должна у вас быть. Например, Вы планируете начать работу на FOREX с объемом сделки 30000 долларов США. Для грамотного управления капиталом Вам необходимо иметь на счете сумму не менее 3 000 долларов.
+                        </p>
+                       
+                        <h4>4. Всегда выставляйте ордера Stop Loss и Take Profit</h4>
+                        <p>
+                            Данные ордера ставят своей основной задачей спасти трейдера от разорения (исполнение стоп-лоссов) или обеспечить дополнительную прибыль (стоп-профит). Психологический фактор – это второе, чем не должен пренебрегать трейдер. Поэтому обязательно выставляйте ордера сразу же после открытия сделки.
+                        </p>
+                        <p>
+                            При этом размер take profit должен как минимум в два раза превышать размер stop loss. При равном количестве прибыльных и убыточных сделок это склоняет математическое ожидание прибыли в сторону трейдера. Никогда не передвигать установленный ордер stop loss в сторону увеличения убытка.
+                        </p>
+
+                        <h4>5. Актуальность открытых позиций</h4>
+                        <p>
+                            Немедленно закрывать позицию если ситуация на рынке развивается в разрез с изначальным прогнозом, или по истечении времени определённого анализом предшествующем открытию данной позиции.
+                        </p>
+
+                        <h4>6. Не отыгрывайтесь</h4>
+                        <p>
+                            Финансовые рынки – это не казино. Мыслите трезво и расчетливо - если Вы не уверены в своих силах или не продумали свои дальнейшие действия, не рискуйте капиталом. 
+                        </p>
+                        <p>
+                            Всегда следует помнить, что будет новый день, и рынок вновь предоставит массу возможностей для заработка. Эмоции, захлёстывающие трейдера в попытке отыграться, не лучший советчик, поэтому лучше отложить торговлю до наступления полного эмоционального равновесия (возможно на день или два). В этом случае надо понимать, что отсутствие позиции также является позицией, позволяющей сохранить депозит до поры, до времени в неприкосновенности.
+                        </p>
+
+                        <h4>7. Диверсификация</h4>
+                        <p>
+                            Финансовые рынки – это не казино. Мыслите трезво и расчетливо - если Вы не уверены в своих силах или не продумали свои дальнейшие действия, не рискуйте капиталом. 
+                        </p>
+                        <p>
+                            Всегда следует помнить, что будет новый день, и рынок вновь предоставит массу возможностей для заработка. Эмоции, захлёстывающие трейдера в попытке отыграться, не лучший советчик, поэтому лучше отложить торговлю до наступления полного эмоционального равновесия (возможно на день или два). В этом случае надо понимать, что отсутствие позиции также является позицией, позволяющей сохранить депозит до поры, до времени в неприкосновенности.
+                        </p>
+
+                    </div>
+                    <div class="page-tags">
+                        <div class="tag">#Базовые правила управления капиталом</div>
+                        <div class="tag">#Методы управление</div>
+                        <div class="tag">#Тактики управления капиталом</div>
+                        <div class="tag">#Анти - мартингейл</div>
+                        <div class="tag">#Анти - мартингейл</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 article-right d-none d-lg-block">
+                    <div class="article-materials">
+                        <div class="title-3 mt-5">Полезные материалы</div>
+                        <div class="article-download">
+                            <div>
+                                №1 Сущность и место управления капиталом в трейдинге
+                            </div>
+                            <div class="file-type"><img src="./images/icons/file-ppt.svg" alt="" draggable="false"></div>
+                            <a href="./images/logo.svg" class="file-download" download><span class="pv pv-download-orange"></span></a>
+                        </div>
+                        <div class="article-download">
+                            <div>
+                                №2 Сущность и место управления капиталом в трейдинге
+                            </div>
+                            <div class="file-type"><img src="./images/icons/file-ppt.svg" alt="" draggable="false"></div>
+                            <a href="./images/logo.svg" class="file-download" download><span class="pv pv-download-orange"></span></a>
+                        </div>
+                        <div class="article-download">
+                            <div>
+                                №3 Сущность и место управления капиталом в трейдинге
+                            </div>
+                            <div class="file-type"><img src="./images/icons/file-ppt.svg" alt="" draggable="false"></div>
+                            <a href="./images/logo.svg" class="file-download" download><span class="pv pv-download-orange"></span></a>
+                        </div>
+                        <div class="article-download">
+                            <div>
+                                №4 Сущность и место управления капиталом в трейдинге
+                            </div>
+                            <div class="file-type"><img src="./images/icons/file-ppt.svg" alt="" draggable="false"></div>
+                            <a href="./images/logo.svg" class="file-download" download><span class="pv pv-download-orange"></span></a>
+                        </div>
+                        <div class="article-download">
+                            <div>
+                                №5 Сущность и место управления капиталом в трейдинге
+                            </div>
+                            <div class="file-type"><img src="./images/icons/file-ppt.svg" alt="" draggable="false"></div>
+                            <a href="./images/logo.svg" class="file-download" download><span class="pv pv-download-orange"></span></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Academy start -->
+    <div class="academy-page">
+        <div class="container">
+            <h2>Основы трейдинга</h2>
+            <div class="academy-grid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn load-more">Смотреть больше</button>
+            </div>
+                
+
+            <h2>Психология трейдинга</h2>
+            <div class="academy-grid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn load-more">Смотреть больше</button>
+            </div>
+            
+            <h2>Основы трейдинга</h2>
+            <div class="academy-grid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn load-more">Смотреть больше</button>
+            </div>
+
+            <h2>Управление трейдинга</h2>
+            <div class="academy-grid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn load-more">Смотреть больше</button>
+            </div>
+
+            <h2>Анализ трейдинга</h2>
+            <div class="academy-grid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="academy-card">
+                            <img src="./images/academy-card.jpg" alt="" draggable="false">
+                            <div class="card-date">07.08.2021</div>
+                            <div class="card-title">Название темы</div>
+                            <div class="card-text">Современный трейдинг интересен не только тем, что доступен всем и каждоve что доступен всем и каждоve что доступен всем и каждоve</div>
+                            <a href="/" class="card-btn">Читать</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn load-more">Смотреть больше</button>
+            </div>
+                
+        </div>
+    </div>
+
+    <!-- Academy end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

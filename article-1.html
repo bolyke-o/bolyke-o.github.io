@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Article start -->
+    <div class="article-page bg-light-mob">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="page-heading">
+                        <div class="page-heading-content">
+                            <div class="heading-tags">
+                                <a href="/" class="nav-link active">Все обзоры</a>
+                                <a href="/" class="nav-link">Крипто</a>
+                                <a href="/" class="nav-link">Кризис</a>
+                                <a href="/" class="nav-link">Нефть</a>
+                                <a href="/" class="nav-link">Газ</a>
+                                <a href="/" class="nav-link">CLO</a>
+                            </div>
+                            <div class="heading-info mb-2">
+                                <b>Крипто</b>
+                                <span class="text-grey--light ps-2">6 часов</span>
+                            </div>
+                            <h1>CAC40: как 1,3% превратить в +30%</h1>
+                            <div class="subtitle">
+                                Индекс CAC40 французского фондового рынка по текущим итогам 2019 года вырос почти на 30%. Цифра сама по себе выглядит подозрительно высокой, даже если не знать темпов роста экономики Франции. Но если сравнить ее с реальными темпами экономического роста в стране (+1,3% в 2019 году, то есть более чем в 20 (!!!) раз меньше, нежели темп роста фондового рынка), становится ясно, что у нас надулся очередной ценовой пузырь.
+                            </div>
+                            <div class="heading-share d-flex align-items-center">
+                                <span>Поделиться:</span>
+                                <a href="" class="ms-3"><span class="pv pv-twitter-grey"></span></a>
+                                <a href="" class="ms-3"><span class="pv pv-instagram-grey"></span></a>
+                                <a href="" class="ms-3"><span class="pv pv-facebook-grey"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <img src="./images/article-1.jpg" alt="" draggable="false">
+                        <p>
+                            Мы уже говорили о том, что ситуация на фондовом рынке США предельно взрывоопасная. Как видим, фондовый рынок Франции
+                            не исключение. Это лишь вопрос времени, когда он рухнет на 50-60%.
+                        </p>
+                        <p>
+                            В данном обзоре мы продолжим писать о возможных факторах, которые спровоцируют схлопывание пузыря. Напомним, до
+                            этого мы уже говорили о торговых и валютных войнах, а также о резком росте числа дефолтов по облигациям китайских
+                            компаний, которые в теории могут обвалить рынок объемом в $4,4 трлн., что в свою очередь спровоцирует финансовое
+                            цунами по всему миру.
+                        </p>
+                        <p>
+                            Сегодня же поговорим о еще более серьезной проблеме, по сравнению с которой Китай с его $4,4 трлн. – это
+                            незначительная угроза. Речь пойдет о рынке корпоративного долга США. Его объемы более чем в два раза больше
+                            китайского рынка и в настоящий момент составляют порядка $9 трлн. Это 46% ВВП США и почти половина глобального рынка
+                            корпоративного долга. Это больше, нежели было перед Великой Депрессией. То есть масштабы проблемы очень серьёзные.
+                        </p>
+                        <p>
+                            Низкие процентные ставки стимулировали корпорации США наращивать долг. Проблема состоит в том, что компании сами
+                            загнали себя в петлю. Для покрытия старого долга им нужно выпускать новый к тому же большим объемом. Эту пирамиду
+                            можно строить достаточно долго в условиях экономического роста. Но любые проблемы в экономике спровоцируют массовые
+                            неплатежи и дефолты и пирамида посыплется. Ее обломки вполне могут погрести под собой всю мировую экономики.
+                        </p>
+                        <p>
+                            Важно также понимать, что добрая треть текущих рейтингов по корпоративным облигациям завышена. То, что считается
+                            инвестиционным уровнем, минимум в трети, а то и в половине случаев на самом деле является мусорными облигациями.
+                            Собственно, аналогичная ситуация была на рынке MBS и CDO накануне глобального финансового кризиса. То же самое
+                            происходит сейчас на рынке CLO (мы об этом писали в наших более ранних обзорах) и рынке корпоративных облигаций США.
+                        </p>
+                        <p>
+                            Да и финансовое состояние американских корпораций ухудшается: прибыли снижаются, а долговая нагрузка, наоборот,
+                            растет.
+                        </p>
+                        <p>
+                            Если рухнет финансовая система США, это неизменно вызовет эффект домино, поскольку финансовое заражение
+                            распространится по всему миру.
+                        </p>
+                        <p>
+                            Итого, ожидания падения фондового рынка Франции не беспочвенны. Скорее наоборот, ситуация выглядит практически
+                            решенной и весь вопрос лишь во времени. 2019 год, вполне вероятно, станет последним годом безосновательного
+                            стероидного роста и уже в 2020 году фондовые рынки по всему миру начнут корректироваться. Масштабы коррекции – от
+                            50% и выше. Учитывая, что за последние годы фондовый рынок Франции вырос более чем в 2 раза, он без сомнения станет
+                            объектом массированных распродаж. В этом процессе мы и рекомендуем поучаствовать, продавая как рынок в целом (индекс
+                            CAC40), так и акции отдельных эмитентов.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="title-4">Другие обзоры:</div>
+                        <div class="relative-item">
+                            <a href="/">Почему покупки природного газа – это одна из самых перспективных сделок на товарных рынках в 2020 году</a>
+                            <div>
+                                В этом обзоре мы обсудим основные драйвера нисходящего тренда цены на природный газ на мировых рынках : резкий рост
+                                добычи газа в США, торговые войны и аномально теплая зима в США.
+                            </div>
+                            <div class="relative-date">11.08.2020</div>
+                            <a href="/" class="more-link">Подробнее</a>
+                        </div>
+                        <div class="relative-item">
+                            <a href="/">Технически и фундаментально покупки газа – это отличная торговая идея</a>
+                            <div>
+                                Цены на природный газ опустились в район многолетних минимумов.
+                            </div>
+                            <div class="relative-date">17.01.2020</div>
+                            <a href="/" class="more-link">Подробнее</a>
+                        </div>
+                        <div class="relative-item">
+                            <a href="/">О новой «великой депрессии» и сделке десятилетия</a>
+                            <div>
+                                Фондовый рынок США штурмует новые вершины, что лишь приближает, на наш взгляд, неизбежное – крах фондовых рынков по всему миру.
+                            </div>
+                            <div class="relative-date">11.12.2019</div>
+                            <a href="/" class="more-link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 article-right">
+                    <div class="title-3 mt-5">Еще статьи</div>
+                    <div class="article-item">
+                        <div class="article-info mb-2">
+                            <b>Крипто</b>
+                            <span class="text-grey--light ps-2">6 часов</span>
+                        </div>
+                        <div class="title-4">Почему запреты в Китае – плюс для криптовалют</div>
+                        <div class="text-grey">
+                            Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь объявили Bitcoin нежелательной инвестицией
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-info mb-2">
+                            <b>Газ</b>
+                            <span class="text-grey--light ps-2">6 часов</span>
+                        </div>
+                        <div class="title-4">Почему запреты в Китае – плюс для криптовалют</div>
+                        <div class="text-grey">
+                            Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь объявили Bitcoin нежелательной инвестицией
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-info mb-2">
+                            <b>Невть</b>
+                            <span class="text-grey--light ps-2">6 часов</span>
+                        </div>
+                        <div class="title-4">Почему запреты в Китае – плюс для криптовалют</div>
+                        <div class="text-grey">
+                            Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь объявили Bitcoin нежелательной инвестицией
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-info mb-2">
+                            <b>Крипто</b>
+                            <span class="text-grey--light ps-2">6 часов</span>
+                        </div>
+                        <div class="title-4">Почему запреты в Китае – плюс для криптовалют</div>
+                        <div class="text-grey">
+                            Китайские запреты привели к распродаже криптовалют, а главы JPMorgan и Goldman Sachs вновь объявили Bitcoin нежелательной инвестицией
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

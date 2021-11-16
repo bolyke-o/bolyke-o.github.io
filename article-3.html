@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Article start -->
+    <div class="article-page">
+        <div class="container">
+            <div class="page-heading">
+                <div class="page-heading-content">
+                    <h1>Построение инвестиционного портфеля для фондового рынка</h1>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="row justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="col-lg-7">
+                        <h3>Инвестиционные портфели для фондового рынка. Что это?</h3>
+                        <p>
+                            Финансовые рынки - это очень большая вселенная, в которой найдется все, начиная от акций и облигаций, заканчивая валютами, криптовалютами и производными финансовыми инструментами (фьючерсы, форварды, опционы и сотни других весьма специфичных активов). Заблудиться в этой мультивселенной  очень просто даже опытному финансисту, что уж говорить про начинающих инвесторов.
+                        </p>
+                        <p>
+                            Наша задача - помочь - выбрать наиболее интересные и перспективные позиции, исходя из нашего опыта и видения рынков, а также с учетом конкретных расчетов под индивидуальные потребности клиента. Мы сделаем все что в наших илах, чтобы обеспечить нужный уровень диверсификации, риска, сбалансированности и доходности портфеля.
+                        </p>
+                        <p>
+                            Для этого в нашем распоряжении как классические портфельные теории (CAPM, APM, MPT и др), так и собственные наработки.
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="./images/article-3.jpg" alt="" draggable="false">
+                    </div>
+                </div>
+
+
+                <div class="sources">
+                    <div class="title-3 mb-4">Успешные кейсы</div>
+                    <div class="swiper-container sources-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sources-item">
+                                    <div class="sources-heading">
+                                        <div>
+                                            <span>Q3</span>
+                                            <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                        </div>
+                                        <div class="sources-title">
+                                            Тип портфеля: <br>
+                                            Консервативный
+                                        </div>
+                                    </div>
+                                    <div class="sources-body">
+                                        <table>
+                                            <tr>
+                                                <th>Состав:</th>
+                                                <th>Активы:</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Фондовый рынок - 70%</td>
+                                                <td>$ 25 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Товарный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Валютный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sources-item">
+                                    <div class="sources-heading">
+                                        <div>
+                                            <span>Q3</span>
+                                            <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                        </div>
+                                        <div class="sources-title">
+                                            Тип портфеля: <br>
+                                            Консервативный
+                                        </div>
+                                    </div>
+                                    <div class="sources-body">
+                                        <table>
+                                            <tr>
+                                                <th>Состав:</th>
+                                                <th>Активы:</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Фондовый рынок - 70%</td>
+                                                <td>$ 25 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Товарный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Валютный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sources-item">
+                                    <div class="sources-heading">
+                                        <div>
+                                            <span>Q3</span>
+                                            <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                        </div>
+                                        <div class="sources-title">
+                                            Тип портфеля: <br>
+                                            Консервативный
+                                        </div>
+                                    </div>
+                                    <div class="sources-body">
+                                        <table>
+                                            <tr>
+                                                <th>Состав:</th>
+                                                <th>Активы:</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Фондовый рынок - 70%</td>
+                                                <td>$ 25 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Товарный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Валютный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sources-item">
+                                    <div class="sources-heading">
+                                        <div>
+                                            <span>Q3</span>
+                                            <a href="/./images/logo.svg" download>Скачать файл <span class="pv pv-download"></span></a>
+                                        </div>
+                                        <div class="sources-title">
+                                            Тип портфеля: <br>
+                                            Консервативный
+                                        </div>
+                                    </div>
+                                    <div class="sources-body">
+                                        <table>
+                                            <tr>
+                                                <th>Состав:</th>
+                                                <th>Активы:</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Фондовый рынок - 70%</td>
+                                                <td>$ 25 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Товарный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Валютный рынок - 15%</td>
+                                                <td>$ 5 000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="text-center d-block d-lg-none">
+                        <a href="/" class="btn-primary btn-lg">Узнать больше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-order">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <div class="title-3 mb-4">Заказать услугу</div>
+                    <div class="text-grey--light mb-4">
+                        Для того, чтобы сформировать свой собственный портфель, вы можете обратиться к нашим специалистам. Для начала следует заполнить форму представленную ниже.
+                    </div>
+                    <form class="service-form" action="">
+                        <div class="w-100 mb-4">
+                            <select class="form-select mb-0" name="service-markets">
+                                <option selected disabled>Название рынков</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                            <span class="text-grey--lighter">Выберите несколько рынков</span>   
+                        </div>
+                       
+                        <div class="w-50 pe-3">
+                            <select class="form-select" name="service-size">
+                                <option selected disabled>Размер портфеля</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                            <select class="form-select" name="service-type">
+                                <option selected disabled>Тип портфеля</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                            <select class="form-select" name="service-term">
+                                <option selected disabled>Срок действия</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="w-50 ps-3">
+                            <div class="input-field">
+                                <input type="text" name="service-name" placeholder="Имя">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" name="service-email" placeholder="Электронная почта">
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" name="service-phone" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <textarea class="form-control" name="service-comment" rows="1" placeholder="Comment"></textarea>
+
+                        <div class="d-flex flex-column-reverse flex-sm-row justify-content-between align-items-center pt-3">
+                            <div class="text-grey--lighter mt-3 mt-sm-0">Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформы</div>
+                            <button class="btn-primary btn-full btn-md mt-3 mt-sm-0 ms-0 ms-sm-4">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <img src="./images/service-order.png" alt="">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Article end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
