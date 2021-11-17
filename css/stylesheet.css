@@ -2562,29 +2562,29 @@ a.btn-secondary {
     max-width: 580px;
 }
 
-/* academy page */ 
-.academy-page h2 {
+/* category page */ 
+.category-page h2 {
     margin: 40px 0 20px;
     color: #1D253E;
 }
-.academy-card {
+.category-card {
     margin-bottom: 24px;
 }
-.academy-card img {
+.category-card img {
     width: 100%;
     height: 183px;
     margin-bottom: 24px;
     border-radius: 14px;
-    object-fit: cover;
+    object-fit: cover;  
     object-position: center;
 }
-.academy-card .card-date {
+.category-card .card-date {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 21px;
     color: #6F747A;
 }
-.academy-card .card-text {
+.category-card .card-text {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 21px;
@@ -2595,14 +2595,14 @@ a.btn-secondary {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.academy-card .card-title {
+.category-card .card-title {
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 28px;
     color: #1D253E;
     flex-direction: row;
 }
-.academy-card .card-btn {
+.category-card .card-btn {
     display: block;
     padding: 12px;
     width: 100%;
@@ -2614,13 +2614,13 @@ a.btn-secondary {
     background: #F1F1F1;
     border-radius: 40px;
 }
-.academy-card .card-btn:hover {
+.category-card .card-btn:hover {
     color: #ED6528;
 }
-.academy-page .load-more {
+.category-page .load-more {
     display: none;
 }
-.academy-grid:last-child {
+.category-grid:last-child {
     margin-bottom: 60px;
 } 
 
@@ -3275,22 +3275,22 @@ a.btn-secondary {
     .article-right {
         margin-bottom: 60px;
     }
-    .academy-card {
+    .category-card {
         margin-bottom: 32px;
     }
-    .academy-card img {
+    .category-card img {
         margin-bottom: 16px;
     }
-    .academy-card .card-btn {
+    .category-card .card-btn {
         font-weight: 400;
     }
-    .academy-page .load-more {
+    .category-page .load-more {
         display: block;
         padding: 0 0 10px;
         margin-top: -10px;
         text-decoration: underline;
     }
-    .academy-grid:last-child {
+    .category-grid:last-child {
         margin-bottom: 50px;
     } 
     .service-form > div {
