@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profit View</title>
+    <link rel='stylesheet' href='./js/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='./js/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='./css/stylesheet.css'>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex align-center justify-content-between">
+            <div class="header-logo">
+                <a href="/"><img src="./images/logo.svg" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <div class="menu-toggle"></div>
+                <div class="header-wrap">
+                    <div class="header-scroll">
+                        <span class="menu-back"></span>
+                        <nav class="header-menu">
+                            <ul>
+                                <li><a href="/">Статьи</a></li>
+                                <li><a href="/">Бесплатный материал</a></li>
+                                <li><a href="/">Индикаторы</a></li>
+                                <li><a href="/">Наши курсы</a></li>
+                                <li><a href="/">Инвестиционные портфели</a></li>
+                            </ul>
+                            <div class="header-social-wrap">
+                                <div>Социальные сети</div>
+                                <div class="header-social">
+                                    <a href="/"><span class="pv pv-twitter"></span></a>
+                                    <a href="/"><span class="pv pv-instagram"></span></a>
+                                    <a href="/"><span class="pv pv-facebook"></span></a>
+                                    <a href="/"><span class="pv pv-youtube"></span></a>
+                                </div>
+                            </div>
+                            <a href="/" class="header-user-out"><span class="pv pv-logout"></span> Выход</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-user">
+                    <div class="user-toggle" data-bs-toggle="modal" data-bs-target="#userModal"><span
+                            class="pv pv-user"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticker">
+            <div class="swiper-container ticker-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">24,
+                                835.64</span><span class="ticker-change"><span
+                                    class="ticker-increase">+5.32%</span></span></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ticker-item"><span class="ticker-cur">Eur/USD</span><span class="ticker-rate">52,
+                                726.19</span><span class="ticker-change"><span
+                                    class="ticker-decrease">-3.32%</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column-reverse">
+                    <ul class="nav" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login"
+                                role="tab" aria-controls="login" aria-selected="true">Log in</a>
+                            <span>Have an account?</span>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup"
+                                role="tab" aria-controls="signup" aria-selected="false">Join free today</a>
+                            <span>Dont have an account?</span>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="mb-2">
+                                Welcome back
+                            </div>
+                            <div class="modal-title">
+                                Login to your account
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="email" name="login-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="login-password" placeholder="Password">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginRemember">
+                                        <label class="form-check-label" for="loginRemember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="/" class="forgot-pswrd text-grey--light">Forgot password?</a>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Log in</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                            <div class="modal-title">
+                                Get started
+                            </div>
+                            <form class="login-form" action="">
+                                <div class="input-field">
+                                    <input type="name" name="signup-name" placeholder="Name">
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="signup-email" placeholder="Email">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-password" placeholder="Password">
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="signup-repeat-password" placeholder="Repeat password">
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="signupRemember">
+                                    <label class="form-check-label" for="signupRemember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <button class="btn-primary btn-full btn-md">Get started</button>
+                            </form>
+                            <div class="login-social">
+                                <div class="text-center text-grey--light">Вход через соц сети</div>
+                                <div class="social-list d-flex justify-content-center">
+                                    <a href="/" class="modal-twitter"><img src="./images/icons/modal-twitter.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-facebook"><img src="./images/icons/modal-facebook.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-apple"><img src="./images/icons/modal-apple.svg"
+                                            alt=""></a>
+                                    <a href="/" class="modal-gplus"><img src="./images/icons/modal-gplus.svg"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Indicator start -->
+    <div class="indicator-page">
+        <div class="page-heading heading-float">
+            <div class="container">
+                <div class="page-heading-content">
+                    <h1>Разработка индивидуальных индикаторов</h1>
+                </div>
+                <div class="thumbnail">
+                    <picture>
+                        <source 
+                        media="(min-width: 650px)"
+                        srcset="./images/indicator-heading.jpg">
+                        <img src="./images/indicator-heading-mob.jpg" alt="" draggable="false">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="page-content">
+                <div class="row justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6">
+                        <h3>Разработка индивидуальных индикаторов. Что это?</h3>
+                        <p>
+                            Понимание сути ресурсосберегающих технологий является качественно новой ступенью новых принципов формирования материально-технической и кадровой базы.
+                        </p>
+                        <p>
+                            Каждый из нас понимает очевидную вещь: постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовке и реализации новых принципов формирования материально-технической и кадровой базы.
+                        </p>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <img src="./images/indicator-content.jpg" alt="" draggable="false">
+                    </div>
+                </div>
+
+                <div class="indicator-benefits">
+                    <div class="title-3 mb-5">Преимущества разработки индивидуальных индикаторов</div>
+                    <div class="row benefit-content align-items-stretch">
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <div class="benefit-item">
+                                <div class="benefit-img"><span class="pv pv-benefit-user"></span></div>
+                                <div class="benefit-title">Aвторские алгоритмы</div>
+                                <div class="benefit-text">У Вас будет аналитическое преимущество относительно прочих трейдеров, которые пользуются стандартными и доступными всем индикаторами.</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <div class="benefit-item">
+                                <div class="benefit-img"><span class="pv pv-benefit-edit"></span></div>
+                                <div class="benefit-title">Учет ваших пожеланий</div>
+                                <div class="benefit-text">У Вас будет аналитическое преимущество относительно прочих трейдеров прочих трейдеров, которые .</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <div class="benefit-item">
+                                <div class="benefit-img"><span class="pv pv-benefit-setting"></span></div>
+                                <div class="benefit-title">Настройки</div>
+                                <div class="benefit-text">У Вас будет аналитическое преимущество относительно прочих трейдеров, которые пользуются стандартными и доступными всем индикаторами.</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <div class="benefit-item">
+                                <div class="benefit-img"><span class="pv pv-benefit-file"></span></div>
+                                <div class="benefit-title">Доработка и расширение</div>
+                                <div class="benefit-text">У Вас будет аналитическое преимущество относительно прочих трейдеров, которые пользуются стандартными и доступными.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="indicator-how">
+                    <div class="title-3 mb-5">Как это работает?</div>
+                    <div class="how-content">
+                        <div class="how-item">
+                            <div class="how-number">1</div>
+                            <div class="how-title">Заказ услуги</div>
+                        </div>
+                        <div class="how-item">
+                            <div class="how-number">2</div>
+                            <div class="how-title">Консультация</div>
+                        </div>
+                        <div class="how-item">
+                            <div class="how-number">3</div>
+                            <div class="how-title">Согласование алгоритма </div>
+                            <div class="how-text">Разработка текстовой версии (прототипа)</div>
+                        </div>
+                        <div class="how-item">
+                            <div class="how-number">4</div>
+                            <div class="how-title">Оплата</div>
+                        </div>
+                        <div class="how-item">
+                            <div class="how-number">5</div>
+                            <div class="how-title">Финальная версия</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-order">
+            <div class="container">   
+                <div class="title-3 mb-5 text-center">Заказ индикатора</div>
+                <form class="indicator-form" action="">
+                    <div class="row mb-4 mb-sm-5">
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-name">
+                                <option selected disabled>Название индиктаора</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-term">
+                                <option selected disabled>Срок подписки</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-destination" required>
+                                <option selected disabled>Destination indicator form</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-interval" required>
+                                <option selected disabled>Временный интервал</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-frequency" required>
+                                <option selected disabled>Частота сделки</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-visualization" required>
+                                <option selected disabled>Варианты визуализации</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                    </div>
+                        
+                    <div class="check-group d-flex flex-wrap mb-5">
+                        <div class="d-flex flex-wrap">
+                            <div class="title-4 mb-4">
+                                Отображение торговых сигналов на графике
+                            </div>
+                            <div class="form-check me-4">
+                                <input class="form-check-input" type="radio" name="indicator-signal" id="indicator-signal-true">
+                                <label class="form-check-label" for="indicator-signal-true">
+                                    Да
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="indicator-signal" id="indicator-signal-false" checked>
+                                <label class="form-check-label" for="indicator-signal-false">
+                                    Нет
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="title-4 w-100 mb-4">
+                                Алгоритм предусматрения индикатора выставление стоп-лоссов и тейк-профитов
+                            </div>
+                            <div class="form-check me-4">
+                                <input class="form-check-input" type="radio" name="indicator-algorythm" id="indicator-algorythm-true">
+                                <label class="form-check-label" for="indicator-algorythm-true">
+                                    Да
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="indicator-algorythm" id="indicator-algorythm-false" checked>
+                                <label class="form-check-label" for="indicator-algorythm-false">
+                                    Нет
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="input-field">
+                                <input type="text" name="indicator-analogs" placeholder="Возможные аналоги">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-level" required>
+                                <option selected disabled>Уровень агрессивности трейдинга</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <select class="form-select" name="indicator-destination" required>
+                                <option selected disabled>Destination indicator form</option>
+                                <option value="1">Название 1</option>
+                                <option value="2">Название 2</option>
+                                <option value="3">Название 3</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="input-field">
+                                <input type="text" name="indicator-user-phone" placeholder="Предпочтительное название индикатора">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="input-field">
+                                <input type="text" name="indicator-user-name" placeholder="Имя" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="input-field">
+                                <input type="email" name="indicator-user-email" placeholder="Электронная почта" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn-primary mt-4 w-auto" type="submit">Заказать индикатор</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicator end -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo"><a href="/"><img src="./images/logo.svg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">Наши курсы</a>
+                    <a href="/">Статьи</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Индивидуальные индикаторы</a>
+                    <a href="/">О нас</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="/">Инвестиционные портфели</a>
+                    <a href="/">FAQ</a>
+                </div>
+                <div class="col-lg-3">
+                    <div>Социальные сети</div>
+                    <div class="footer-social">
+                        <a href="/"><span class="pv pv-twitter"></span></a>
+                        <a href="/"><span class="pv pv-instagram"></span></a>
+                        <a href="/"><span class="pv pv-facebook"></span></a>
+                        <a href="/"><span class="pv pv-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Все права защищены
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap/js/popper.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
